@@ -50,6 +50,9 @@
 //	return 0;
 //}
 
+
+//토마토 문제인데 전에 풀던 방식은 맵이 있을 때만 풀 수 있고,
+//지금 푼 방식은 좌표를 가지고 할 경우에도 쓸 수 있어서 활용방법이 더 넓다.
 //#include <stdio.h>
 //#include <stdlib.h>
 //int n,m,x,y,nx,ny,day=0;
