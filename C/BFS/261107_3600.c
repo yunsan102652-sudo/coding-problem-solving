@@ -49,3 +49,31 @@
 //	printf("%d", arr[hx][hy]-1);
 //	return 0;
 //}
+
+//2609~2610 Bug Hunter Mission / c / 재귀함수
+//#include <stdio.h>
+//void bin(int x)
+//{
+//	if(x==0)
+//	{
+//		printf("0");
+//		return;
+//	}
+//	if(x==1)
+//	{
+//		printf("1");
+//		return;
+//	}
+//	bin(x/2);
+//	printf("%d",x%2);
+//}
+//int main()
+//{
+//	bin(3);
+//	printf("\n");
+//	bin(10);
+//	printf("\n");
+//	bin(8);
+//	printf("\n");
+//	return 0;
+//}
