@@ -41,7 +41,11 @@ int main()
 		{
 			for(int j=1;j<=n;j++)
 			{
-				
+				if(map[i][j]>rain&&safe[i][j]==0)
+				{
+					dfs(j,i,rain);
+					count++;
+				}
 			}
 		}
 		if(count > max)
