@@ -44,6 +44,10 @@ int main()
 				
 			}
 		}
+		if(count > max)
+		{
+			max = count;
+		}
 	}
 	printf("%d", max);
 	return 0;
