@@ -23,5 +23,13 @@ int main()
     }
     scanf("%d %d", &x, &y);
     dfs(x,y);
+    for(int i=0;i<10;i++)
+    {
+        printf("%s", map[i]);
+        if(i<9)
+        {
+            printf("\n");
+        }
+    }
     return 0;
 }
