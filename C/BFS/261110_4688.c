@@ -76,7 +76,6 @@ int main()
 	{
 		scanf("%d", &arr[i]);
 	}
-	
 	bfs();
 	return 0;
 }
