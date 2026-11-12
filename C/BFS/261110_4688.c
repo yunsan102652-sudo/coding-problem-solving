@@ -89,7 +89,6 @@
 //int code[100002]={};
 //int path[100002]={};
 //int parent[100002]={};
-//int count=0;
 //char s[35]={};
 //void push(int a)
 //{
@@ -103,15 +102,28 @@
 //}
 //int bfs(int a, int b)
 //{
+//	front=-1;
+//	rear=-1;
+//	for(int i=1;i<=n;i++)
+//	{
+//		parent[i]=-1;
+//	}
 //	push(a);
 //	parent[a]=0;
 //	while(front < rear)
 //	{
 //		int max=rear;
-//		for(int i=1;i<=n;i++)
+//		for(int i=front+1;i<=max;i++)
 //		{
 //			pop();
-//			
+//			if(x==b)//bfs종료해야할때
+//			{
+//				return 1;
+//			}
+//			for(int j=1;j<=n;j++)
+//			{
+//				
+//			}
 //		}
 //	}
 //}
@@ -129,8 +141,27 @@
 //		scanf("%d", &b);
 //		if(bfs(a,b))
 //		{
-//			int now=0;
-//			
+//			int count=0;
+//			int now=b;
+//			while(now!=0)
+//			{
+//				path[count]=now;
+//				count++;
+//				now=parent[now];
+//			}
+//			for(int j=count-1;j>=0;j--)
+//			{
+//				printf("%d ", path[j]);
+////				if(j!=0)
+////				{
+////					printf(" ");
+////				}
+//			}
+//			printf("\n");
+//		}
+//		else
+//		{
+//			printf("-1\n");
 //		}
 //	}
 //	return 0;
