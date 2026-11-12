@@ -82,7 +82,7 @@
 
 //#include <stdio.h>
 //#include <stdlib.h>
-//int n,k,m,x;
+//int n,k,m,x,a,b;
 //int front=-1;
 //int rear=-1;
 //int q[100002]={};
@@ -101,9 +101,19 @@
 //	front++;
 //	x=q[front];
 //}
-//int bfs(int )
+//int bfs(int a, int b)
 //{
-//	push()
+//	push(a);
+//	parent[a]=0;
+//	while(front < rear)
+//	{
+//		int max=rear;
+//		for(int i=1;i<=n;i++)
+//		{
+//			pop();
+//			
+//		}
+//	}
 //}
 //int main()
 //{
@@ -116,7 +126,12 @@
 //	scanf("%d", &m);
 //	for(int i=0;i<m;i++)
 //	{
-//		
+//		scanf("%d", &b);
+//		if(bfs(a,b))
+//		{
+//			int now=0;
+//			
+//		}
 //	}
 //	return 0;
 //}
