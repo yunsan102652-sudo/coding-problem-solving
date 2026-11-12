@@ -122,7 +122,24 @@
 //			}
 //			for(int j=1;j<=n;j++)
 //			{
-//				
+//				if(parent[j]==-1)
+//				{
+//					int temp = code[j] ^ code[x];
+//					int count=0;
+//					while(temp > 0)
+//					{
+//						if(temp%2==1)
+//						{
+//							count++;
+//						}
+//						temp=temp/2;
+//					}
+//					if(count==1)
+//					{
+//						parent[j]=x;
+//						push(j);
+//					}
+//				}
 //			}
 //		}
 //	}
@@ -152,10 +169,6 @@
 //			for(int j=count-1;j>=0;j--)
 //			{
 //				printf("%d ", path[j]);
-////				if(j!=0)
-////				{
-////					printf(" ");
-////				}
 //			}
 //			printf("\n");
 //		}
