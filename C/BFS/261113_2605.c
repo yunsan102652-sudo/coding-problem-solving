@@ -32,6 +32,16 @@ int main()
 			scanf("%d", &arr[i][j]);
 		}
 	}
-    printf("%d", pangc);
+	for(int i=1;i<=7;i++)
+	{
+		for(int j=1;j<=7;j++)
+		{
+			if(arr[i][j]>0)
+			{
+				bfs(i,j);
+			}
+		}
+	}
+	printf("%d", pangc);
 	return 0;
 }
