@@ -49,6 +49,17 @@
 // 			scanf(" %c",&map[i][j]);
 // 		}
 // 	}
-//     printf("%d", count);
+// 	for(int i=1;i<=H;i++)
+// 	{
+// 		for(int j=1;j<=W;j++)
+// 		{
+// 			if(map[i][j]=='L')
+// 			{
+// 				count++;
+// 				dfs(i,j);
+// 			}
+// 		}
+// 	}
+// 	printf("%d", count);
 // 	return 0;
 // }
