@@ -14,6 +14,22 @@ int main()
             scanf("%d", &arr[i][j]);
         }
     }
+    for(int i=1; i<=7; i++)
+    {
+        for(int j=1; j<=7; j++)
+        {
+            if(arr[i][j]!=0)
+            {
+                count=0;
+                a = arr[i][j];
+                dfs(i,j,a);
+                if(count>=3)
+                {
+                    pangc++;
+                }
+            }
+        }
+    }
     printf("%d", pangc);
     return 0;
 }
