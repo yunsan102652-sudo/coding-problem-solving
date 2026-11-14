@@ -17,5 +17,13 @@ int main()
         arr[a][b] = arr[b][a] = 1;
     }
     dfs(1);
+    for(int i=1;i<=n;i++)
+    {
+        if(v[i]==1)
+        {
+            z++;
+        }
+    }
+    printf("%d", z-1);
     return 0;
 }
