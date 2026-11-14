@@ -32,5 +32,10 @@ int main()
         scanf("%d", &arr[i]);
         str[i] = arr[i];
     }
+    qsort(arr,n,sizeof(int),compare);
+    for(int i=0;i<n;i++)
+    {
+        printf("%d ", bs(str[i],0,n-1));
+    }
     return 0;
 }
