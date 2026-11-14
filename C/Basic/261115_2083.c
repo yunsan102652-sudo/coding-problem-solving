@@ -2,7 +2,26 @@
 #include <stdlib.h>
 int compare[1000001]={};
 int k;
-
+int bs(int s, int e)
+{
+    if(s>e)
+    {
+        return -1;
+    }
+    int mid = (s+e)/2;
+    if(compare[mid]==k)
+    {
+        return mid+1;
+    }
+    else if(k<compare[mid])
+    {
+        return bs(s,mid-1);
+    }
+    else if(k>compare[mid])
+    {
+        return bs(mid+1,e);
+    }
+}
 int main()
 {
     int n;
