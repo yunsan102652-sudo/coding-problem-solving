@@ -22,7 +22,25 @@ void pop()
 }
 int bfs(int a, int b)
 {
-
+	front=-1;
+	rear=-1;
+	push(a,b);
+	arr[a][b]=0;
+	while(front < rear)
+	{
+		pop();
+		for(int k=0;k<4;k++)
+		{
+			int nx=x+dir[k][0];
+			int ny=y+dir[k][1];
+			if(arr[nx][ny]==1)
+			{
+				push(nx,ny);
+				arr[nx][ny]=0;
+			}
+		}
+	}
+	return rear+1;
 }
 int main()
 {
