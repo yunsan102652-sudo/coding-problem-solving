@@ -16,6 +16,10 @@ int main()
 		scanf("%d", &arr[i]);
 	}
 	scanf("%d", &m);
-	
+	for(int i=0;i<m;i++)
+	{
+		scanf("%d", &compare[i]);
+		printf("%d ", bs(0,n-1,compare[i])+1);
+	}
 	return 0;
 }
