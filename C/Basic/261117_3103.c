@@ -35,7 +35,19 @@ int main()
 		{
 			pop();
 		}
-
+		else if(arr[0]=='f')//front
+		{
+			if(front==rear)
+			{
+				printf("-1");
+				printf("\n");
+			}
+			else
+			{
+				printf("%d\n", queue[front+1]);
+			}
+		}
+		
 		else if(arr[1]=='m')//empty
 		{
 			if(front==rear)
