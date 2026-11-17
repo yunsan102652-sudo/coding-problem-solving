@@ -47,7 +47,22 @@ int main()
 				printf("%d\n", queue[front+1]);
 			}
 		}
-		
+		else if(arr[0]=='s')//size
+		{
+			printf("%d\n", rear-front);
+		}
+		else if(arr[0]=='b')//back
+		{
+			if(front==rear)
+			{
+				printf("-1");
+				printf("\n");
+			}
+			else
+			{
+				printf("%d\n", queue[rear]);
+			}
+		}
 		else if(arr[1]=='m')//empty
 		{
 			if(front==rear)
