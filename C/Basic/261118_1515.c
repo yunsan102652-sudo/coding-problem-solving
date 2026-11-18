@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+{
+	int a[27][27]={};
+	int b[27][27]={};
+	int i,j,k,x,y;
+	int c = 0;//생명 갯수
+	for(i=1;i<=25;i++)
+	{
+		for(j=1;j<=25;j++)
+		{
+			scanf("%d", &a[i][j]);
+		}
+	}
+	for(i=0;i<27;i++)
+	{
+		for(j=0;j<27;j++)
+		{
+			c = 0;
+			for(x=-1;x<=1;x++)
+			{
+				for(y=-1;y<=1;y++)
+				{
+					
+				}
+			}
+			
+		}
+	}
+	for(i=1;i<=25;i++)
+	{
+		for(j=1;j<=25;j++)
+		{
+			printf("%d ", b[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
