@@ -7,7 +7,11 @@ void push(char data)
 }
 char pop()
 {
-    
+    if(top>-1)
+    {
+        return stack[top--];
+    }
+    return 0;
 }
 int main()
 {
