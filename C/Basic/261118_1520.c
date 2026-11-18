@@ -7,7 +7,14 @@ int f(int str[172][172],int i, int j)
     {
         for(y=-1;y<=1;y++)
         {
-            
+            if(x==0&&y==0)
+            {
+                continue;
+            }
+            if(str[i+x][j+y]==1)
+            {
+                c++;
+            }
         }
     }
     return c;
