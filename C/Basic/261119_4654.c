@@ -21,6 +21,10 @@ int main()
     for(int i=0;i<n;i++)
     {
         scanf("%d", &h);
+        while(top!=-1 && stack[top][0] < h)
+        {
+            pop();
+        }
         
     }
     return 0;
