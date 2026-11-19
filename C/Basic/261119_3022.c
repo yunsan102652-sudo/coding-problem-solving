@@ -48,7 +48,13 @@ int main()
 		strcpy(stack2,temp);
 		printf("-");
 	}
+	top=strlen(stack)-1;
+	top2=strlen(stack2)-1;
 	
+	while(top3>-1&&stack3[top3]==0)
+	{
+		top3--;
+	}
 	while(top3!=-1)
 	{
 		printf("%d", pop3());
