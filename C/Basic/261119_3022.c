@@ -40,6 +40,18 @@ int main()
 		printf("0");
 		return 0;
 	}
+	if(strlen(stack)<strlen(stack2) || strlen(stack)==strlen(stack2) && strcmp(stack, stack2)<0)
+	{
+		char temp[201]={};
+		strcpy(temp,stack);
+		strcpy(stack,stack2);
+		strcpy(stack2,temp);
+		printf("-");
+	}
 	
+	while(top3!=-1)
+	{
+		printf("%d", pop3());
+	}
 	return 0;
 }
