@@ -21,7 +21,19 @@ int pop2()
 		return stack2[top2+1]-'0';
 	}
 }
-
+void push3(int data)
+{
+	top3++;
+	stack3[top3]=data;
+}
+int pop3()
+{
+	if(top3>-1)
+	{
+		top3--;
+		return stack3[top3+1];
+	}
+}
 int main()
 {
 	scanf("%s", stack);
