@@ -25,7 +25,16 @@ int main()
 		fgets(str,201,stdin);
 		if(str[1]=='u')//u==push
 		{
-			
+			//숫자를 문자열로 받아지니 정수로 바꿔야함.
+			int num=0;
+			for(int j=0;str[j]!='\0';j++)
+			{
+				if(str[j]>='0'&&str[j]<='9')
+				{
+					num= num*10+(str[j]-'0');
+				}
+			}
+			push(num);
 		}
 		else if(str[1]=='o')
 		{
