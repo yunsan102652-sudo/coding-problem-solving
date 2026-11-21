@@ -77,7 +77,7 @@ int main()
 	scanf("%s", str);
 	for(int i=0;i<n;i++)//하나씩 거꾸로 stack에다가 넣는다.
 	{
-		
+		push(str[i]);
 	}
 	int count = 0;
 	while(top != -1)
@@ -86,7 +86,7 @@ int main()
 	}
 	while(top2 != -1)
 	{
-	    
+	    printf("%c", pop2());
 	}
 	return 0;
 }
