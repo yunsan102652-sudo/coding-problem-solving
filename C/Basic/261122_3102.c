@@ -31,7 +31,15 @@ int main()
 		{
 			if(str[0]=='t')//t==top
 			{
-				
+				if(top==-1)
+				{
+					printf("-1");
+					printf("\n");
+				}
+				else
+				{
+					printf("%d\n", stack[top]);
+				}
 			}
 			else//pop
 			{
