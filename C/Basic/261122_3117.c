@@ -22,7 +22,14 @@
      for(int i=0;i<k;i++)
      {
          scanf("%d", &n);
-         
+         if(n==0)
+         {
+             pop();
+         }
+         else
+         {
+             push(n);
+         }
      }
      for(int i=0; i<=top; i++)
 	 {
