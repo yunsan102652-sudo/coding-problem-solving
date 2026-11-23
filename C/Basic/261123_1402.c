@@ -24,5 +24,8 @@ int main()
         scanf("%d", &k);
         push(k);
     }
-    
+    while(top!=-1)
+    {
+        printf("%d ", pop());
+    }
 }
