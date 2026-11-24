@@ -27,3 +27,31 @@
 //     f(n);
 //     return 0;
 // }
+
+// #include <stdio.h>
+// void ff(int x)
+// {
+//     if(x==0)
+//     {
+//         return;
+//     }
+//     ff(x-1);
+//     printf("%d ", x);
+// }
+// void f(int x)
+// {
+//     if(x==0)
+//     {
+//         return;
+//     }
+//     f(x-1);
+//     ff(x);
+//     printf("\n");
+// }
+// int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     f(n);
+//     return 0;
+// }
