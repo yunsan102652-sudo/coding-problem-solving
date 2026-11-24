@@ -1,6 +1,12 @@
 #include <stdio.h>
 void f(int n)
 {
+    if(n==1)
+    {
+        printf("1");
+        return;
+    }
+    printf("%d\n", n);
     
 }
 int main()
