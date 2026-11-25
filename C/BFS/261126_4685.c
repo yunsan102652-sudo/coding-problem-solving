@@ -41,7 +41,15 @@ void bfs(int a, int b)
             }
             for(int j=1;j<=n;j++)
             {
-                
+                if(parent[j]==-1)
+                {
+                    int bit=code[x]^code[j];
+                    if(bit!=0 && (bit&(bit-1))==0)
+                    {
+                        parent[j]=x;
+                        push(j);
+                    }
+                }
             }
         }
     }
