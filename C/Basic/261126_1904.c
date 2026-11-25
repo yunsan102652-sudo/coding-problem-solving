@@ -1,16 +1,20 @@
-#include <stdio.h>
-void f(a, b)
-{
-    if(a>b)
-    {
-        return;
-    }
-    
-}
-int main()
-{
-    int a,b;
-    scanf("%d %d", &a, &b);
-    f(a, b);
-    return 0;
-}
+// #include <stdio.h>
+// void f(a, b)
+// {
+//     if(a>b)
+//     {
+//         return;
+//     }
+//     if(a%2==1)
+//     {
+//         printf("%d ", a);
+//     }
+//     f(a+1, b);
+// }
+// int main()
+// {
+//     int a,b;
+//     scanf("%d %d", &a, &b);
+//     f(a, b);
+//     return 0;
+// }
