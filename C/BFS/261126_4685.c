@@ -35,7 +35,14 @@ void bfs(int a, int b)
         for(int i=front+1;i<=max;i++)
         {
             pop();
-            
+            if(x==b)
+            {
+                return;
+            }
+            for(int j=1;j<=n;j++)
+            {
+                
+            }
         }
     }
 }
