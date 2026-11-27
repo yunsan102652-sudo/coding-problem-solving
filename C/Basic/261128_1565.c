@@ -1,14 +1,14 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-int gcd(int p, int q){ if(p==0) return q; return gcd(q%p, p);}
+// int gcd(int p, int q){ if(p==0) return q; return gcd(q%p, p);}
 
-long long int lcm(long long int x, long long int y)
-{
-    
-}
-int main()
-{
-  int a, b;
-  scanf("%d%d", &a, &b);
-  printf("%lld\n", lcm(a, b));
-}
+// long long int lcm(long long int x, long long int y)
+// {
+//     return (x*y)/gcd(x,y);
+// }
+// int main()
+// {
+//   int a, b;
+//   scanf("%d%d", &a, &b);
+//   printf("%lld\n", lcm(a, b));
+// }
